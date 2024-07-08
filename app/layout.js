@@ -5,10 +5,20 @@ import StyledComponentsRegistry from "@/lib/registry";
 import GlobalStyle from "./globals.js";
 
 const clash = localFont({
-  src: "/fonts/ClashDisplay-SemiBold.otf",
+  src: "../public/fonts/ClashDisplay-SemiBold.otf",
   display: "swap",
   variable: "--font-clash",
 });
+
+// const clash = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/ClashDisplay-SemiBold.otf",
+//       weight: 600,
+//       variable: "--font-clash",
+//     },
+//   ],
+// });
 
 const inter = Inter({
   subsets: ["latin"],
