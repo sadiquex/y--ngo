@@ -5,7 +5,7 @@ import StyledComponentsRegistry from "@/lib/registry";
 import GlobalStyle from "./globals.js";
 
 const clash = localFont({
-  src: "../public/fonts/ClashDisplay-SemiBold.otf",
+  src: "/fonts/ClashDisplay-SemiBold.otf",
   display: "swap",
   variable: "--font-clash",
 });
