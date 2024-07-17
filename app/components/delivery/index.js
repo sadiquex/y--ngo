@@ -15,4 +15,8 @@ const DeliveryContainer = styled.div`
   height: 700px;
   width: 100%;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 `;

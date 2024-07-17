@@ -21,6 +21,10 @@ export const OutreachCardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const OutreachCard = styled.div`
@@ -44,4 +48,8 @@ export const OutreachLocation = styled.p`
 export const Outreachquote = styled.p`
   font-family: var(--font-outfit);
   font-size: 1.2rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;

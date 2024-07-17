@@ -10,6 +10,11 @@ export const NavbarContainer = styled.nav`
   margin: 0 auto;
   padding: 1rem 0;
   font-family: var(--font-outfit);
+
+  @media (max-width: 768px) {
+    background-color: pink;
+    /* padding: 1rem; */
+  }
 `;
 
 export const Logo = styled.div`
@@ -22,6 +27,20 @@ export const NavElements = styled.ul`
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const Hamburger = styled.div`
+  display: none;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 export const NavItem = styled.li`

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   CTA,
+  Hamburger,
   Logo,
   NavbarContainer,
   NavElements,
@@ -26,6 +27,9 @@ export default function Navbar() {
           <CTA>Donate</CTA>
         </NavItem>
       </NavElements>
+
+      {/* mobile */}
+      <Hamburger>=</Hamburger>
     </NavbarContainer>
   );
 }

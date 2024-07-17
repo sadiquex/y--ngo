@@ -12,10 +12,18 @@ export const ProgramsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    /* background-color: pink; */
+    padding: 0 1rem;
+  }
 `;
 
 export const ProgramsTitle = styled.h2`
   font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ProgramCardsContainer = styled.div`
@@ -23,12 +31,21 @@ export const ProgramCardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    padding: 1rem 0;
+  }
 `;
 
 export const ProgramCard = styled.div`
   background: #fff;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    min-width: 300px;
+  }
 `;
 
 export const ProgramImageWrapper = styled.div`

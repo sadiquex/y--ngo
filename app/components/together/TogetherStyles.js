@@ -17,6 +17,11 @@ export const TogetherContainer = styled.div`
 
   color: #fff;
   padding: 3rem;
+
+  @media (max-width: 768px) {
+    height: auto;
+    background-attachment: scroll;
+  }
 `;
 
 export const TogetherWrapper = styled.div`
@@ -27,11 +32,21 @@ export const TogetherWrapper = styled.div`
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 export const TogetherTitle = styled.h2`
   font-size: 64px;
   width: 50%;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const TogetherBtn = styled.button`
@@ -41,4 +56,6 @@ export const TogetherBtn = styled.button`
   padding: 1rem 2rem;
   border-radius: 2rem;
   cursor: pointer;
+  border: none;
+  outline: none;
 `;

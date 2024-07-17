@@ -9,7 +9,7 @@ import {
   OutreachWrapper,
 } from "./Outreach";
 
-export default function Outreact() {
+export default function Outreach() {
   return (
     <OutreachContainer>
       <OutreachWrapper>

@@ -14,6 +14,11 @@ export const ValuesCardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem;
+  }
 `;
 
 export const ValueCard = styled.div`
@@ -71,11 +76,19 @@ export const ValuesVideoContainer = styled.div`
 export const ValuesVideoTitle = styled.h2`
   font-size: 2rem;
   text-align: center;
-  font-size: 48px;
+  font-size: 4rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ValuesVideo = styled.div`
   height: 600px;
   width: 100%;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
 `;

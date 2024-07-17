@@ -13,8 +13,12 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 10;
-
   color: #fff;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    height: auto;
+  }
 `;
 
 export const HeroTextContainer = styled.div`
@@ -30,6 +34,11 @@ export const Tagline = styled.h2`
   font-family: var(--font-clash);
   text-align: center;
   width: 70%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 3rem;
+  }
 `;
 
 export const BePartBtn = styled.button`
@@ -45,6 +54,11 @@ export const HeroSubtext = styled.p`
   font-weight: normal;
   width: 50%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    /* padding: 0 1rem; */
+  }
 `;
 
 export const HeroCTA = styled.button`
